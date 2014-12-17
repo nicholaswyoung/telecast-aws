@@ -1,0 +1,36 @@
+{
+  "name": "telecast-aws",
+  "version": "0.1.0",
+  "description": "An AWS provider for Telecast.",
+  "main": "index.js",
+  "scripts": {
+    "test": "gulp test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/originalmachine/telecast-aws.git"
+  },
+  "keywords": [
+    "telecast",
+    "aws",
+    "amazon",
+    "s3",
+    "file",
+    "upload"
+  ],
+  "author": "Nicholas Young <nicholas@nicholaswyoung.com>",
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/originalmachine/telecast-aws/issues"
+  },
+  "homepage": "https://github.com/originalmachine/telecast-aws",
+  "dependencies": {
+    "pkgcloud": "^1.1.0"
+  },
+  "devDependencies": {
+    "async": "^0.9.0",
+    "chai": "^1.10.0",
+    "gulp": "^3.8.10",
+    "gulp-mocha": "^2.0.0"
+  }
+}
