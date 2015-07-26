@@ -1,2 +1,4 @@
 test
 Gulpfile.js
+.env
+test/support/test.txt

@@ -1,3 +1,5 @@
+require('dotenv').load()
+
 var AWSProvider = require('../')
 ,   fs          = require('fs')
 ,   path        = require('path')
@@ -64,6 +66,10 @@ describe('AWSProvider: File Upload', function () {
 
       upload = this.provider.put('hello.txt');
 
+      upload.on('error', function (err) {
+        if (err) return done(err);
+      });
+
       upload.on('success', function (stored) {
         expect(stored).to.not.equal(null);
         done();
@@ -79,7 +85,7 @@ describe('AWSProvider: File Upload', function () {
     });
 
     it('should be pipable', function (done) {
-      var output   = path.join(__dirname, 'tmp/test.txt')
+      var output   = path.join(__dirname, 'support/test.txt')
       ,   download = fs.createWriteStream(output)
       ,   transfer = this.provider.get('hello.txt');
 
