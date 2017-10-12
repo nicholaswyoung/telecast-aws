@@ -1,5 +1,7 @@
 # Telecast for AWS
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/nicholaswyoung/telecast-aws.svg)](https://greenkeeper.io/)
+
 An AWS provider for the [Telecast](http://github.com/originalmachine/telecast) file management system.
 
 ## Installation
