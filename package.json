@@ -33,6 +33,6 @@
     "dotenv": "^1.2.0",
     "gulp": "^3.8.10",
     "gulp-babel": "^5.1.0",
-    "gulp-mocha": "^2.0.0"
+    "gulp-mocha": "4.3.1"
   }
 }
